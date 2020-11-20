@@ -1,10 +1,12 @@
 import React from 'react';
-import home1 from '../img/home1.png'
+import home1 from '../img/home1.png';
+// styled
+import styled from 'styled-components';
 
 const AboutSection = () => {
     return (
-        <div>
-            <div className="description">
+        <About>
+            <Description>
                 <div className="title">
                     <div className="hide">
                         <h2>We work to make</h2>
@@ -20,12 +22,37 @@ const AboutSection = () => {
                 </div>
                 <p>Contact us for any multimedia services you may need!</p>
                 <button>Contact Use</button>
-            </div>
-            <div className="image">
+            </Description>
+            <Image>
                 <img src={home1} alt="cameraman" />
-            </div>
-        </div>
-    )
-}
+            </Image>
+        </About>
+    );
+};
+
+// styled components
+const About = styled.div`
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+    color: white;
+`;
+const Description = styled.div`
+    flex: 1;
+    padding-right: 5rem;
+    h2{
+        font-weight: lighter;
+    }
+`;
+const Image = styled.div`
+    flex: 1;
+    img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+`
 
 export default AboutSection;
