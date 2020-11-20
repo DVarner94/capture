@@ -34,6 +34,7 @@ button{
     }
     h4{
         font-weight: bold;
+        font-size: 4rem;
     }
     a{
         font-size: 1.1rem;
