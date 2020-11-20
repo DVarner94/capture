@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 export const About = styled.div`
     min-height: 90vh;
     display: flex;
