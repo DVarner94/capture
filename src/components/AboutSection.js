@@ -8,17 +8,17 @@ const AboutSection = () => {
         <About>
             <Description>
                 <div className="title">
-                    <div className="hide">
+                    <Hide>
                         <h2>We work to make</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>
                             you <span>dreams</span> come
                         </h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
                         <h2>true.</h2>
-                    </div>
+                    </Hide>
                 </div>
                 <p>Contact us for any multimedia services you may need!</p>
                 <button>Contact Use</button>
@@ -48,11 +48,16 @@ const Description = styled.div`
 `;
 const Image = styled.div`
     flex: 1;
+    overflow: hidden;
     img{
         width: 100%;
         height: 80vh;
         object-fit: cover;
     }
-`
+`;
+
+const Hide = styled.div`
+    overflow: hidden;
+`;
 
 export default AboutSection;
