@@ -5,24 +5,23 @@ import { About, Description, Hide, Image } from '../styles';
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
+
     return (
         <About>
             <Description>
-                <div className="title">
+                <motion.div className="title">
                     <Hide>
-                        <motion.h2 
-                        animate={{ opacity: 1, transition: { duration: 2 } }} 
-                        initial={{ opacity: 0 }}>We work to make</motion.h2>
+                        <motion.h2>We work to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>
+                        <motion.h2>
                             you <span>dreams</span> come
-                        </h2>
+                        </motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>true.</h2>
+                        <motion.h2>true.</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>Contact us for any multimedia services you may need!</p>
                 <button>Contact Use</button>
             </Description>
