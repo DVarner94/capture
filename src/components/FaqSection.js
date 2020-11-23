@@ -1,46 +1,47 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { About } from '../styles';
-import Toggle, from './Toggle';
+import Toggle from './Toggle';
 
 const FaqSection = () => {
     const [faqToggle, setFaqToggle] = useState(false)
     return (
         <Faq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How Do I start</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit.</p>
-                    {faqToggle && (
+            <Toggle title="How Do I start">
+                <div className="question">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit.</p>
+                        {faqToggle && (
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+                        )}
+                    </div>
+                </div>
+            </Toggle>
+            <Toggle title='Daily Schedule'>
+                <div className="question">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
-                    )}
+                    </div>
                 </div>
-            </div>
-            <div className="faq-line"></div>
-            <div className="question">
-                <h4>Daily Schedule</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+            </Toggle>
+            <Toggle title='Differen Ways To Pay'>
+                <div className="question">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+                    </div>
                 </div>
-            </div>
-            <div className="faq-line"></div>
-            <div className="question">
-                <h4>Different Payment Methods</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+            </Toggle>
+            <Toggle title='What Do You Have To Offer?'>
+                <div className="question">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+                    </div>
                 </div>
-            </div>
-            <div className="question">
-                <h4>What Products and Services Do You Offer?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
         </Faq>
     );
 };
