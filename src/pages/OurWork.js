@@ -12,6 +12,10 @@ import { fade, photoAnim, pageAnimation, lineAnim } from '../animation';
 const OurWork = () => {
     return (
         <Work variants={pageAnimation} initial='hidden' animate='show'>
+            <Frame1></Frame1>
+            <Frame2></Frame2>
+            <Frame3></Frame3>
+            <Frame4></Frame4>
             <Movie>
                 <motion.h1 variants={fade}>The Athlete</motion.h1>
                 <motion.div variants={lineAnim} className="line"></motion.div>
@@ -63,6 +67,26 @@ const Movie = styled.div`
 
 const Hide = styled.div`
     overflow: hidden;
+`;
+
+// fram animations
+const Frame1 = styled(motion.div)`
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100vh;
+    background: #fffebf;
+    z-index: 2;
+`;
+const Frame2 = styled(Frame1)`
+    background: #ff8efb;
+`;
+const Frame3 = styled(Frame1)`
+    background: #8ed2ff;
+`;
+const Frame4 = styled(Frame1)`
+    background: #8effa0;
 `
 
 export default OurWork;
