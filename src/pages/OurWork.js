@@ -6,16 +6,18 @@ import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 // animations
 import { motion } from 'framer-motion';
-import { fade, photoAnim, pageAnimation, lineAnim } from '../animation';
+import { fade, photoAnim, pageAnimation, lineAnim, slider, sliderContainer } from '../animation';
 
 
 const OurWork = () => {
     return (
         <Work variants={pageAnimation} initial='hidden' animate='show'>
-            <Frame1></Frame1>
-            <Frame2></Frame2>
-            <Frame3></Frame3>
-            <Frame4></Frame4>
+            <motion.div variants={sliderContainer}>
+                <Frame1 variants={slider}></Frame1>
+                <Frame2 variants={slider}></Frame2>
+                <Frame3 variants={slider}></Frame3>
+                <Frame4 variants={slider}></Frame4>
+            </motion.div>
             <Movie>
                 <motion.h1 variants={fade}>The Athlete</motion.h1>
                 <motion.div variants={lineAnim} className="line"></motion.div>
