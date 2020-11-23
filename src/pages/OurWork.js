@@ -6,16 +6,19 @@ import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 // animations
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../animation';
+import { fade, photoAnim, pageAnimation } from '../animation';
+
 
 const OurWork = () => {
     return (
         <Work variants={pageAnimation} initial='hidden' animate='show'>
             <Movie>
-                <h1>The Athlete</h1>
-                <div className="line"></div>
+                <motion.h1 variants={fade}>The Athlete</motion.h1>
+                <motion.div className="line"></motion.div>
                 <Link to='/work/the-athlete'>
-                    <img src={athlete} alt="athlete" />
+                    <Hide>
+                        <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+                    </Hide>
                 </Link>
             </Movie>
             <Movie>
@@ -57,5 +60,9 @@ const Movie = styled.div`
         object-fit: cover;
     }
 `;
+
+const Hide = styled.div`
+    overflow: hidden;
+`
 
 export default OurWork;
