@@ -6,7 +6,7 @@ import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 // animations
 import { motion } from 'framer-motion';
-import { fade, photoAnim, pageAnimation } from '../animation';
+import { fade, photoAnim, pageAnimation, lineAnim } from '../animation';
 
 
 const OurWork = () => {
@@ -14,7 +14,7 @@ const OurWork = () => {
         <Work variants={pageAnimation} initial='hidden' animate='show'>
             <Movie>
                 <motion.h1 variants={fade}>The Athlete</motion.h1>
-                <motion.div className="line"></motion.div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to='/work/the-athlete'>
                     <Hide>
                         <motion.img variants={photoAnim} src={athlete} alt="athlete" />
@@ -51,7 +51,7 @@ const Movie = styled.div`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
-        background: #cccccc;
+        background: #23d997;
         margin-bottom: 3rem;
     }
     img{
