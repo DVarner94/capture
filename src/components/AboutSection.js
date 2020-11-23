@@ -3,7 +3,7 @@ import home1 from '../img/home1.png';
 // styled
 import { About, Description, Hide, Image } from '../styles';
 import { motion } from 'framer-motion';
-import { titleAnim } from '../animation'
+import { titleAnim, fade, photoAnim } from '../animation'
 
 const AboutSection = () => {
 
@@ -23,11 +23,11 @@ const AboutSection = () => {
                         <motion.h2 variants={titleAnim}>true.</motion.h2>
                     </Hide>
                 </motion.div>
-                <p>Contact us for any multimedia services you may need!</p>
-                <button>Contact Use</button>
+                <motion.p variants={fade}>Contact us for any multimedia services you may need!</motion.p>
+                <motion.button variants={fade}>Contact Use</motion.button>
             </Description>
             <Image>
-                <img src={home1} alt="cameraman" />
+                <motion.img variants={photoAnim} src={home1} alt="cameraman" />
             </Image>
         </About>
     );
