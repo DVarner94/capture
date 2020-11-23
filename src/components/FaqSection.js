@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { About } from '../styles';
+import Toggle, from './Toggle';
 
 const FaqSection = () => {
+    const [faqToggle, setFaqToggle] = useState(false)
     return (
         <Faq>
             <h2>Any Questions <span>FAQ</span></h2>
@@ -10,7 +12,9 @@ const FaqSection = () => {
                 <h4>How Do I start</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+                    {faqToggle && (
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+                    )}
                 </div>
             </div>
             <div className="faq-line"></div>
