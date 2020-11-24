@@ -2,46 +2,38 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { About } from '../styles';
 import Toggle from './Toggle';
+import { AnimateSharedLayout } from 'framer-motion';
 
 const FaqSection = () => {
-    const [faqToggle, setFaqToggle] = useState(false)
     return (
         <Faq>
-            <h2>Any Questions <span>FAQ</span></h2>
-            <Toggle title="How Do I start">
-                <div className="question">
-                    <div className="answer">
-                        <p>Lorem ipsum dolor sit.</p>
-                        {faqToggle && (
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
-                        )}
-                    </div>
-                </div>
-            </Toggle>
-            <Toggle title='Daily Schedule'>
-                <div className="question">
+            <AnimateSharedLayout>
+                <h2>Any Questions <span>FAQ</span></h2>
+                <Toggle title="How Do I start">
                     <div className="answer">
                         <p>Lorem ipsum dolor sit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
                     </div>
-                </div>
-            </Toggle>
-            <Toggle title='Differen Ways To Pay'>
-                <div className="question">
+                </Toggle>
+                <Toggle title='Daily Schedule'>
                     <div className="answer">
                         <p>Lorem ipsum dolor sit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
                     </div>
-                </div>
-            </Toggle>
-            <Toggle title='What Do You Have To Offer?'>
-                <div className="question">
+                </Toggle>
+                <Toggle title='Differen Ways To Pay'>
                     <div className="answer">
                         <p>Lorem ipsum dolor sit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
                     </div>
-                </div>
-            </Toggle>
+                </Toggle>
+                <Toggle title='What Do You Have To Offer?'>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
+                    </div>
+                </Toggle>
+            </AnimateSharedLayout>
         </Faq>
     );
 };
