@@ -8,12 +8,11 @@ import { scrollReveal } from '../animation';
 
 const FaqSection = () => {
     const [element, controls] = useScroll();
-    console.log(controls)
     return (
         <Faq variants={scrollReveal} ref={element} animate={controls} initial='hidden'>
             <AnimateSharedLayout>
                 <h2>Any Questions <span>FAQ</span></h2>
-                <Toggle title="How Do I start">
+                <Toggle title="How Do I start?">
                     <div className="answer">
                         <p>Lorem ipsum dolor sit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
@@ -25,7 +24,7 @@ const FaqSection = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
                     </div>
                 </Toggle>
-                <Toggle title='Differen Ways To Pay'>
+                <Toggle title='Different Ways To Pay'>
                     <div className="answer">
                         <p>Lorem ipsum dolor sit.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, magni.</p>
