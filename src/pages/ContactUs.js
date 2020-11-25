@@ -5,41 +5,41 @@ import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
 
 const ContactUs = () => {
-    return (
-        <ContactStyle
-            exit="exit"
-            variants={pageAnimation}
-            initial="hidden"
-            animate="show"
-            style={{ background: "#fff" }}
-        >
-            <Title>
-                <Hide>
-                    <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>
-                </Hide>
-            </Title>
-            <div>
-                <Hide>
-                    <Social variants={titleAnim}>
-                        <Circle />
-                        <h2>Send Us A Message</h2>
-                    </Social>
-                </Hide>
-                <Hide>
-                    <Social variants={titleAnim}>
-                        <Circle />
-                        <h2>Send an email.</h2>
-                    </Social>
-                </Hide>
-                <Hide>
-                    <Social variants={titleAnim}>
-                        <Circle />
-                        <h2>Social Media</h2>
-                    </Social>
-                </Hide>
-            </div>
-        </ContactStyle>
-    );
+  return (
+    <ContactStyle
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      style={{ background: "#fff" }}
+    >
+      <Title>
+        <Hide>
+          <motion.h2 variants={titleAnim}>Book now!</motion.h2>
+        </Hide>
+      </Title>
+      <div>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Call us: 707-777-777</h2>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Email us: teamcapture@email.com</h2>
+          </Social>
+        </Hide>
+        <Hide>
+          <Social variants={titleAnim}>
+            <Circle />
+            <h2>Follow our Instagram!</h2>
+          </Social>
+        </Hide>
+      </div>
+    </ContactStyle>
+  );
 };
 
 const ContactStyle = styled(motion.div)`
