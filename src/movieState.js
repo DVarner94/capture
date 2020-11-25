@@ -17,19 +17,19 @@ export const MovieState = () => {
       url: "/work/the-athlete",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Perfect for any sport!",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“From golf to motocross, we'll get that perfect shot.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Stills or Video",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Catch big-air in slow-motion!”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "On location, where you need us.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“We come to you, at your gym, your game, or where ever!”",
         },
       ],
     },
@@ -40,19 +40,19 @@ export const MovieState = () => {
       secondaryImg: goodtimes2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Perfect for any occasion.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“For the big day or just a random photoshoot with your favorite person.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Memories forever",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Our high quality captures will help your special moments live on forever.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Anywhere, Anytime",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Either choose the location, or we can help!”",
         },
       ],
     },
@@ -63,19 +63,19 @@ export const MovieState = () => {
       secondaryImg: musician2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Music Videos",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“We do it all, including music videos and album covers.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "We're here to help",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Don't know what to do with your hands in a music video? Our pro's will help you out.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Highest Quality Equipment",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Only using the best equipment available, you can be sure your photos and videos will be of the highest quality.”",
         },
       ],
     },
