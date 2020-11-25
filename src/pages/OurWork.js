@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import athlete from '../img/athlete-small.png';
-import theracer from '../img/theracer-small.png';
-import goodtimes from '../img/goodtimes-small.png';
+import athlete from '../img/mtnbike.png';
+import wedding from '../img/wedding.png';
+import rapper from '../img/rapper.png';
+
 // animations
 import { motion } from 'framer-motion';
 import { fade, photoAnim, pageAnimation, lineAnim, slider, sliderContainer } from '../animation';
@@ -32,17 +33,17 @@ const OurWork = () => {
                 </Link>
             </Movie>
             <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-                <h2>The Racer</h2>
+                <h2>The Musician</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Link to='/work/the-racer'>
-                    <img src={theracer} alt="theracer" />
+                <Link to='/work/the-musician'>
+                    <img src={rapper} alt="rapper" />
                 </Link>
             </Movie>
             <Movie ref={element2} variants={fade} animate={controls2} initial='hidden'>
-                <h2>Good Times</h2>
+                <h2>The Couple</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Link to='/work/good-times'>
-                    <img src={goodtimes} alt="goodtimes" />
+                <Link to='/work/the-couple'>
+                    <img src={wedding} alt="wedding" />
                 </Link>
             </Movie>
             <ScrollTop />
@@ -54,6 +55,11 @@ const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
+    background: #fff;
+    @media (max-width: 1300px){
+        padding: 2rem 2rem;
+    }
+    
     h2{
         padding: 1rem 0rem;
     }
