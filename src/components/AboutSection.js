@@ -5,6 +5,8 @@ import { About, Description, Hide, Image } from '../styles';
 import { motion } from 'framer-motion';
 import { titleAnim, fade, photoAnim } from '../animation';
 import Wave from './Wave';
+import { Link } from 'react-router-dom';
+
 
 const AboutSection = () => {
 
@@ -17,7 +19,7 @@ const AboutSection = () => {
                     </Hide>
                     <Hide>
                         <motion.h2 variants={titleAnim}>
-                            you <span>dreams</span> come
+                            your <span>dreams</span> come
                         </motion.h2>
                     </Hide>
                     <Hide>
@@ -25,13 +27,15 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>Contact us for any multimedia services you may need!</motion.p>
-                <motion.button variants={fade}>Contact Use</motion.button>
+                <Link to='/contact' >
+                    <motion.button variants={fade}>Contact Us</motion.button>
+                </Link>
             </Description>
             <Image>
                 <motion.img variants={photoAnim} src={home1} alt="cameraman" />
             </Image>
             <Wave />
-        </About>
+        </About >
     );
 };
 
