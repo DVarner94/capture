@@ -14,8 +14,9 @@ const MovieDetail = () => {
 
     // useEffect
     useEffect(() => {
-        const currentMovie = movies.filter((stateMovie) => stateMovie.url === url)
+        const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
         setMovie(currentMovie[0]);
+        console.log(setMovies);
     }, [movies, url]);
     return (
         <>
@@ -69,6 +70,10 @@ const Awards = styled.div`
     margin: 5rem 10rem;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 1500px){
+        display: block;
+        margin: 2rem 2rem;
+    }
 `;
 const AwardStyle = styled.div`
     padding: 5rem;
