@@ -12,15 +12,15 @@ const Nav = () => {
             <ul>
                 <li>
                     <Link to='/'>About Us</Link>
-                    <Line transition={{ duration: 0.75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/' ? '50%' : '0%' }} />
+                    <Line transition={{ duration: .75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/' ? '50%' : '0%' }} />
                 </li>
                 <li>
                     <Link to='/work'>Our Work</Link>
-                    <Line transition={{ duration: 0.75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/' ? '50%' : '0%' }} />
+                    <Line transition={{ duration: 0.75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/work' ? '50%' : '0%' }} />
                 </li>
                 <li>
                     <Link to='/contact'>Contact Us</Link>
-                    <Line transition={{ duration: 0.75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/' ? '50%' : '0%' }} />
+                    <Line transition={{ duration: 0.75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/contact' ? '50%' : '0%' }} />
                 </li>
             </ul>
         </StyledNav>
@@ -55,7 +55,7 @@ const StyledNav = styled.nav`
         padding-left: 10rem;
         position: relative;
     }
-    @media {max-width: 1300px}{
+    @media (max-width: 1300px){
         flex-direction: column;
         padding: 2rem 1rem;
         #logo{
