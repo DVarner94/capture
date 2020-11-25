@@ -32,7 +32,7 @@ export const fade = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { ease: "easeOut", duration: 0.75 },
+    transition: { duration: 0.75, ease: "easeOut" },
   },
 };
 
@@ -67,7 +67,7 @@ export const slider = {
 
 export const sliderContainer = {
   hidden: { opacity: 1 },
-  show: { opacity: 1, transition: { staggerChildren: 0.1, ease: 'easeOut' } }
+  show: { opacity: 1, transition: { staggerChildren: 0.15, ease: 'easeOut' } }
 }
 
 export const scrollReveal = {
@@ -77,6 +77,6 @@ export const scrollReveal = {
     scale: 1,
     transition: {
       duration: 0.5,
-    }
-  }
-}
+    },
+  },
+};
