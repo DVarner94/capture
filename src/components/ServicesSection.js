@@ -23,33 +23,33 @@ const ServicesSection = () => {
                             <img src={clock} alt="clock" />
                             <h3>Efficient</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Fast returns on your projects.</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={teamwork} alt="team" />
                             <h3>Teamwork</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Perfection through collaboration.</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={diaphragm} alt="diaphragm" />
-                            <h3>Diaphragm</h3>
+                            <h3>Quality</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>We use the best equipment available.</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={money} alt="money"
                             />
-                            <h3>Money</h3>
+                            <h3>Affordable</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>We are the best deal in town!</p>
                     </Card>
                 </Cards>
             </Description>
-            <Image className="image">
+            <Image>
                 <img src={home2} alt="home2" />
             </Image>
         </Services>
@@ -73,7 +73,7 @@ const Cards = styled.div`
   }
 `;
 const Card = styled.div`
-  /* flex-basis: 20rem; */
+  flex-basis: 20rem;
   .icon {
     display: flex;
     align-items: center;
