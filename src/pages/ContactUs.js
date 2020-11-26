@@ -22,13 +22,13 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Call us: 707-777-777</h2>
+            <h2>Call: 707-777-777</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Email us: teamcapture@email.com</h2>
+            <h2>Email: pixels@email.com</h2>
           </Social>
         </Hide>
         <Hide>

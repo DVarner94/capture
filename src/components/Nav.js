@@ -8,11 +8,11 @@ const Nav = () => {
     const { pathname } = useLocation();
     return (
         <StyledNav>
-            <h1><Link id="logo" to='/'>Capture</Link></h1>
+            <h1><Link id="logo" to='/'>Pixel Studios</Link></h1>
             <ul>
                 <li>
                     <Link to='/'>About Us</Link>
-                    <Line transition={{ duration: .75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/' ? '50%' : '0%' }} />
+                    <Line transition={{ duration: 0.75 }} initial={{ width: '0%' }} animate={{ width: pathname === '/' ? '50%' : '0%' }} />
                 </li>
                 <li>
                     <Link to='/work'>Our Work</Link>
